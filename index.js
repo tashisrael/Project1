@@ -48,4 +48,18 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  slidesPerView: 1, // Default to 1 slide per view
+  spaceBetween: 30, // Space between slides
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 1, // You can adjust this as per requirement
+      spaceBetween: 40
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 1, // You can adjust this as per requirement
+      spaceBetween: 50
+    }
+  }
 });
