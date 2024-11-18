@@ -894,113 +894,77 @@ textarea {
   }
 }
 
-/* Swiper container */
-.swiper-container {
-  width: 100%;
-  height: auto;
+.project-details__showcase-img-cont {
   position: relative;
-  display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  padding: 0 50px; /* Add padding to create space on sides for arrows */
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
+  width: 100%;
+  max-width: 600px; /* Adjust max width as needed */
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.project-details__showcase-img {
-  max-width: 80%; /* Adjust to add space on sides */
-  height: auto;
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides {
+  width: 100%;
+  max-height: 400px; /* Adjust max height as needed */
   object-fit: cover;
+  display: none; /* Initially hide all images */
 }
 
-/* Style for navigation buttons */
-.swiper-button-next, 
-.swiper-button-prev {
-  color: #000;
+.mySlides:first-child {
+  display: block; /* Show the first image initially */
+}
+
+.button-container {
   position: absolute;
-  top: 50%;
-  width: 27px;
-  height: 44px;
-  margin-top: -22px;
-  z-index: 10;
-  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.8);
+  pointer-events: none; /* Prevent accidental clicks outside the buttons */
+}
+
+.prev-button,
+.next-button {
+  pointer-events: all; /* Enable clicking on buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 12px 16px;
   border-radius: 50%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure buttons appear above the image */
+  transition: background-color 0.3s ease;
 }
 
-.swiper-button-prev {
-  left: 10px; /* Position arrow at the left end */
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
 }
 
-.swiper-button-next {
-  right: 10px; /* Position arrow at the right end */
+.prev-button {
+  position: absolute;
+  left: 15px; /* Adjust spacing from the left edge */
 }
 
-/* Responsive styling for mobile view */
-@media (max-width: 767px) {
-  .swiper-container {
-    width: 100%;
-    height: auto;
-    padding: 0 5px; /* Adjust padding for mobile view */
-  }
-  
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .project-details__showcase-img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto; /* Center the image */
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 22px;
-    height: 36px;
-  }
-
-  .swiper-button-prev {
-    left: 5px; /* Adjust for mobile view */
-  }
-
-  .swiper-button-next {
-    right: 5px; /* Adjust for mobile view */
-  }
+.next-button {
+  position: absolute;
+  right: 15px; /* Adjust spacing from the right edge */
 }
 
-/* Responsive styling for tablet view */
-@media (min-width: 768px) and (max-width: 991px) {
-  .swiper-container {
-    width: 100%;
-    height: auto;
-    padding: 0 20px; /* Adjust padding for tablet view */
-  }
-
-  .project-details__showcase-img {
-    max-width: 85%; /* Make images larger on tablets */
-  }
-
-  .swiper-button-prev {
-    left: 10px; /* Adjust for tablet view */
-  }
-
-  .swiper-button-next {
-    right: 10px; /* Adjust for tablet view */
-  }
-}
