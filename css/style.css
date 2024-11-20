@@ -155,7 +155,7 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: #CBA328;
+    background: #0A172B;
     color: #fff; }
   .btn--theme-inv {
     color: #0062b9;
@@ -181,11 +181,11 @@ textarea {
       font-size: 2rem; } }
 
 .d-none {
-  display: none; } /* #5c5346 #CBA328 #FFFFF0 */
+  display: none; } /* #5c5346 #CBA328 #FFFFF0 #A8DEDD #02A8DA #D6A95C #0A172B */
 
   .home-hero {
     color: #fff;
-    background: linear-gradient(to right, #CBA328, #CBA328), url(../../assets/svg/common-bg.svg);
+    background: linear-gradient(to right, #0A172B, #0A172B), url(../../assets/svg/common-bg.svg);
     background-position: center;
     height: 100vh;
     display: flex;
@@ -389,7 +389,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, #CBA328, #CBA328), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, #0A172B, #0A172B), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -470,7 +470,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, #CBA328, #CBA328), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, #0A172B, #0A172B), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
